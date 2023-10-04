@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulario HTML</title>
+</head>
+<body>
+    <h1>Formulario de Ejemplo</h1>
+    
+    <form action="procesar.php" method="post">
+        <!-- Select -->
+        <label for="opcion">Selecciona una opción:</label>
+        <select id="opcion" name="opcion">
+            <option value="opcion1">Opción 1</option>
+            <option value="opcion2">Opción 2</option>
+            <option value="opcion3">Opción 3</option>
+        </select>
+        <br>
+
+        <!-- Textarea -->
+        <label for="comentario">Comentario:</label>
+        <textarea id="comentario" name="comentario" rows="4" cols="50"></textarea>
+        <br>
+
+        <!-- Text -->
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        <br>
+
+        <!-- Email -->
+        <label for="correo">Correo Electrónico:</label>
+        <input type="email" id="correo" name="correo" required>
+        <br>
+
+        <!-- Botón de Envío -->
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
